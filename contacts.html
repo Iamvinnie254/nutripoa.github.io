@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="developers">
+    <meta name="keywords" content="organic farming,nutrition&diet,microgreens">
+    <title>Nutripoa Ltd |</title>
+    <link rel="stylesheet" href="./Public_html/css/index.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <section class="nav-container">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Nutri<span class="one">poa</span></h1>
+            </div>
+            <div class="nav-links-container">
+                <ul class="links">
+                    <a href="./">Home</a>
+                    <a href="#about">About</a>
+                    <a href="./organic.html" target="_parent" rel="noopener noreferrer">Organic Hub</a>
+                    <a href="./our_farm.html" target="_parent" rel="noopener noreferrer">Our Farm</a>
+                    <a href="./nutrition&diet.html" target="_parent" rel="noopener noreferrer">Nutrition & Diet</a>
+                    <a href="./team.html" target="_parent" rel="noopener noreferrer">Team</a>
+                    <a href="./blog.html" target="_parent" rel="noopener noreferrer">Blog</a>
+                    <a href="./FAQ.html" target="_parent" rel="noopener noreferrer">FAQ</a>
+                </ul>
+            </div>
+                <a href="./contacts.html" class="contacts-button" target="_parent" rel="noopener noreferrer">Talk to us</a>
+        </nav>         
+     <!-- DROPDOWN NAVBAR -->
+        <div class="navbar-toggle" onclick="toggleNavbar()">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <div class="dropdown-navbar" id="dropdownNavbar">
+            <a href="./">Home</a>
+            <a href="#about">About</a>
+            <a href="./organic.html" target="_parent" rel="noopener noreferrer">Organic Hub</a>
+            <a href="./our_farm.html" target="_parent" rel="noopener noreferrer">Our Farm</a>
+            <a href="./nutrition&diet.html" target="_parent" rel="noopener noreferrer">Nutrition & Diet</a>
+            <a href="./team.html" target="_parent" rel="noopener noreferrer">Team</a>
+            <a href="./blog.html" target="_parent" rel="noopener noreferrer">Blog</a>
+            <a href="./FAQ.html" target="_parent" rel="noopener noreferrer">FAQ</a>
+            <a href="./contacts.html" class="dropdown-contacts-button" target="_parent" rel="noopener noreferrer">Talk to us</a>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+     <div class="contact-container">
+        <div class="contact-photo"></div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="/send-message" method="post">
+                <div class="form-group">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Type:</label>
+                    <select name="service" id="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+            <div class="map-container">
+                <h3>Our Location</h3>
+                <iframe src="" width="100%" height="250" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+                </iframe>
+                <p style="color:red; font-size: 4rem;">Replace the src"" in the source code with the actual url for the location map!!!!!</p>
+            </div>
+        </div>
+     </div>
+
+    
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h2>Quick links</h2>
+                    <ul>
+                        <li><a href="./">Home</a></li>
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="./organic.html">Organic recycling</a></li>
+                        <li><a href="./our_farm.html">Our farm</a></li>
+                        <li><a href="./nutrition&diet.html">Nutrition & Diet</a></li>
+                        <li><a href="./team.html">Our team</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./FAQ.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Our Company</h2>
+                    <ul>
+                        <li><a href="./team.html">Founders</a></li>
+                        <li><a href="./team.html">Shareholders</a></li>
+                        <li><a href="./team.html">Management</a></li>
+                        <li><a href="./team.html">Employees</a></li>
+                        <li><a href="./team.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h2>Contact Info</h2>
+                    <li><label for="phone">Phone: <span>+254712345678</span></label></li>
+                    <li><label for="email">Email: <a href="mailto:nutripoa@gmail.com">nutripoa@gmail.com</a></label></li>
+                    <li><label for="address">Address: <span>Kiambu,Kenya</span></label></li>
+                </div>
+                <div class="footer-col">
+                    <h2>Follow us</h2>
+                    <div class="contact-icons">
+                        <a href="facebook.com" class="fa fa-facebook"></a>
+                        <a href="twitter.com" class="fa fa-twitter"></a>
+                        <a href="instagram.com" class="fa fa-instagram"></a>
+                        <a href="youtube.com" class="fa fa-youtube"></a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div>copyright&copy; 2024 by <a href="#h">developers</a></div>
+    </section>
+    
+    <script src="./Public_html/js/index.js"></script>
+</body>
+</html>
